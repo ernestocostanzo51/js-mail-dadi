@@ -21,8 +21,43 @@ for(i=0; i<mail.length; i++){
 
 if(accesso){
     console.log("ACCESSO CONSENTITO")
-
 }
 else{
     console.log("ACCESSO NEGATO")
 }
+
+//il primo giocatore lancia un dato
+//il secondo giocatore lancia un dato
+//si vedono i punteggi
+//SE il primo giocatore ha fatto più punti vince
+//ALTRIMENTI vince il secondo
+
+
+let g1
+let g2
+
+ g1 = Math.floor(Math.random() * 6) + 1;
+ g2 = Math.floor(Math.random() * 6) + 1;
+
+ console.log("il giocatore 1 ha generato come punteggio:", g1)
+ console.log("il giocatore 2 ha generato come punteggio:", g2)
+
+ if(g1>g2){
+    console.log("il vincitore è il primo giocatore! con il punteggio di",g1 )
+ }
+else if(g2>g1){
+    console.log("il vincitore è il secondo giocatore! con il punteggio di", g2)
+}
+else{
+    console.log("è finito in parità", g1, "a", g2)
+}
+
+
+
+
+
+
+
+
+
+
